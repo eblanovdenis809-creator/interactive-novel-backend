@@ -1,0 +1,53 @@
+{
+  "start": {
+    "id": "start",
+    "image": "forest.jpg",
+    "text": "Вы просыпаетесь в тёмном лесу. Вокруг шепчет ветер; перед вами два пути.",
+    "choices": [
+      { "id": "left_path", "text": "Пойти по левому тропу" },
+      { "id": "right_path", "text": "Пойти по правому тропу" }
+    ],
+    "end": false
+  },
+  "left_path": {
+    "id": "left_path",
+    "image": "cave.jpg",
+    "text": "Левый путь ведёт к пещере. В темноте слышны шаги.",
+    "choices": [
+      { "id": "enter_cave", "text": "Войти в пещеру" },
+      { "id": "back", "text": "Вернуться назад" }
+    ],
+    "end": false
+  },
+  "right_path": {
+    "id": "right_path",
+    "image": "lake.jpg",
+    "text": "Правый путь приводит к берегу озера. У воды — загадочная фигура.",
+    "choices": [
+      { "id": "approach", "text": "Подойти к фигуре" },
+      { "id": "back", "text": "Вернуться назад" }
+    ],
+    "end": false
+  },
+  "enter_cave": {
+    "id": "enter_cave",
+    "image": "treasure.jpg",
+    "text": "Вы нашли древний сундук. Конец 1: Сундук открывает путь к новому миру.",
+    "choices": [],
+    "end": true
+  },
+  "approach": {
+    "id": "approach",
+    "image": "mirror.jpg",
+    "text": "Фигура окажется хранителем тайны. Конец 2: Тайна сохранена.",
+    "choices": [],
+    "end": true
+  },
+  "back": {
+    "id": "back",
+    "image": "forest.jpg",
+    "text": "Вы возвращаетесь к началу, но путь снова зовёт вас. Конец 0: повторите путь.",
+    "choices": [],
+    "end": true
+  }
+}
